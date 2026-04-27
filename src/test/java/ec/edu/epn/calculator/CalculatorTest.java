@@ -15,8 +15,11 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("Prueba unitaria que realiza la verificacion del metodo sum");
     public void testSum(){
+        //Arrange + Act
         int result = calculator.sum(2, 2);
+        //Assert
         if (result!=4) {
             Assert.fail();
         }
